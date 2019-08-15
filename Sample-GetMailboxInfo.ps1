@@ -29,7 +29,6 @@ Foreach ($Mailbox in $AllMailboxes){
     # - the initial Get-Mailbox
     # - 
     $TemporaryObject = [PSCustomObject]@{
-        
         Name = $Mailbox.Name
         ServerVersion = $MAilbox.AdminDisplayVersion
         SMTPAddress = $Mailbox.PrimarySMTPAddress
