@@ -22,8 +22,8 @@ $AllCollection = @()
 
 #===========================================================================================
 #STEP3 - For each object in the collection, we execute another PowerShell command line that.
-#===========================================================================================
 # will return other properties that are not available in the first PowerShell command line.
+#===========================================================================================
 #In this example, the second PowerShell command line is Get-MailboxStatistics.
 Foreach ($Mailbox in $AllMailboxes){
     #Note the FOREACH structure : we use a "temporary variable"  named "$Mailbox"
