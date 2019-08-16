@@ -50,5 +50,7 @@ Foreach ($Mailbox in $AllMailboxes){
 }
 
 #And all the above makes it easier to export the whole data, with information from both Get-Mailbox and Get-MailboxStatistics
-# 
+# that we stored in a common PSObject, which we used to populate a collection in the form of a
+# PowerShell variable (named $AllCollection) that is typed as an array, which we initialized
+# with @() earlier in the script.
 $AllCollection | Export-Csv -NoTypeInformation c:\temp\MyMailboxes.Csv
